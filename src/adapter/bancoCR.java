@@ -9,6 +9,13 @@ package adapter;
  *
  * @author Usuario
  */
-public class bancoCR {
+public abstract class bancoCR {
+    
+    public abstract void ingresarColones(double colones);
+        
+    public abstract void retirarColones(double colones);
+
+    public abstract void saldoColones(double colenes);
+        
     
 }
