@@ -11,11 +11,11 @@ package adapter;
  */
 public abstract class bancoCR {
     
-    public abstract void ingresarMoneda(double colones);
+    public abstract void ingresarMoneda(double moneda);
         
-    public abstract void retirarMoneda(double colones);
+    public abstract void retirarMoneda(double moneda);
 
-    public abstract void saldoMoneda(double colenes);
+    public abstract void saldoMoneda(double moneda);
         
     
 }
