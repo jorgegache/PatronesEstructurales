@@ -13,7 +13,7 @@ public abstract class bancoCR {
     
     public abstract void ingresarMoneda(double moneda);
         
-    public abstract void saldoMoneda();
+    public abstract double saldoMoneda();
         
     
 }

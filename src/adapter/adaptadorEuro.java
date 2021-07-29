@@ -7,14 +7,15 @@ package adapter;
 
 /**
  *
- * @author Usuario
+ * @author Yirlany
  */
-public class adaptadorColon extends bancoCR{
+public class adaptadorEuro extends bancoCR {
+       
     cajaDolar dolarC = new cajaDolar();
     double dolar;
     @Override
     public void ingresarMoneda(double moneda) {
-        dolar = moneda/617.68;
+        dolar = moneda/0.84;
         dolarC.convertirDolar(dolar);
     }
 
@@ -23,5 +24,4 @@ public class adaptadorColon extends bancoCR{
         return dolarC.cantidadDolar(dolar);
         
     }
-    
 }

@@ -17,18 +17,22 @@ public class conversion {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        adaptadorColon colon = new adaptadorColon();
+        adaptadorEuro euro= new adaptadorEuro();
         Scanner leer= new Scanner (System.in);
         
         System.out.println("ingrese el tipo de moneda que desea convertir a dolar");
         System.out.println("1-Euros");
         System.out.println("2-Colones");
-        leer.nextInt();
         
         switch (leer.nextInt()){
             case 1:
+                euro.ingresarMoneda(8000);
+                System.out.println("saldo dolar: "+euro.saldoMoneda());
                 break;
             case 2:
+                colon.ingresarMoneda(8000);
+                System.out.println("saldo dolar: "+colon.saldoMoneda());
                 break;
             default:
                 System.out.println("la opcion no es valida");
