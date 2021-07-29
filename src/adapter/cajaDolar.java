@@ -10,5 +10,14 @@ package adapter;
  * @author Usuario
  */
 public class cajaDolar {
-    private double dolar =0;
+    private double dolar;
+
+    public double cantidadDolar(double dolar) {
+        return this.dolar;
+    }
+    public double convertirDolar( double dolar){
+        return this.dolar+=dolar;
+    }
+    
+   
 }
